@@ -21,6 +21,24 @@ app.get('/gin', (req, res) => {
             res.render('gin', { data: json.drinks })
         })
 })
+app.get('/vodka', (req, res) => {
+    fetch('https://thecocktaildb.com/api/json/v1/1/filter.php?i=vodka')
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.drinks)
+            res.render('vodka', { data: json.drinks })
+        })
+})
+
+app.get('/cocktails/:cocktail', (req, res) => {
+    console.log(req.params.cocktail)
+    fetch(`http://thecocktaildb.com/api/json/v1/1/lookup.php?i=${req.params.cocktail}`)
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.drinks)
+            res.render('details', { dataId: json.drinks })
+        })
+})
 
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))
