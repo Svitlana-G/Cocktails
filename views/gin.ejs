@@ -1,0 +1,13 @@
+<%- include('./partials/header') %>
+    <main class="coctails">
+
+        <% data.forEach(drink=> {%>
+            <div>
+                <img src="<%= drink.strDrinkThumb %> " alt="">
+                <h2>
+                    <%= drink.strDrink %>
+                </h2>
+            </div>
+            <% }) %>
+
+    </main>

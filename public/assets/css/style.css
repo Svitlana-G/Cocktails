@@ -112,4 +112,12 @@ main div{
  main div:nth-of-type(6){
     background: #87C5A4;
  }
+ main a{
+     text-decoration: none;
+     color: #FFF;
+ }
+.coctails{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
