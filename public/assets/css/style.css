@@ -67,3 +67,49 @@ input[type="submit"]{
      margin: 0 auto;
      padding: 10vh 0 3vh 0;
  }
+
+ main{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+
+main div{
+    padding: 9vh 0 9vh 5%;
+}
+
+ main h2{
+     font-size: 3.125rem;
+     margin-bottom: 0;
+ }
+
+ main p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .875rem;
+    margin-top: 1vh;
+    text-transform: uppercase;    
+ }
+ 
+ main div:nth-of-type(1){
+    background: #6FC3DF;
+ }
+
+ main div:nth-of-type(2){
+    background: #8D82C4;
+ }
+
+ main div:nth-of-type(3){
+    background: #EC8D81;
+ }
+
+ main div:nth-of-type(4){
+    background: #E7B788;
+ }
+
+ main div:nth-of-type(5){
+    background: #8EA9E8;
+ }
+
+ main div:nth-of-type(6){
+    background: #87C5A4;
+ }
+
