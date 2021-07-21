@@ -29,6 +29,38 @@ app.get('/vodka', (req, res) => {
             res.render('vodka', { data: json.drinks })
         })
 })
+app.get('/rum', (req, res) => {
+    fetch('https://thecocktaildb.com/api/json/v1/1/filter.php?i=rum')
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.drinks)
+            res.render('rum', { data: json.drinks })
+        })
+})
+app.get('/scotch', (req, res) => {
+    fetch('https://thecocktaildb.com/api/json/v1/1/filter.php?i=scotch')
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.drinks)
+            res.render('scotch', { data: json.drinks })
+        })
+})
+app.get('/alkoholfrei', (req, res) => {
+    fetch('https://thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.drinks)
+            res.render('alkoholfrei', { data: json.drinks })
+        })
+})
+app.get('/random', (req, res) => {
+    fetch('https://thecocktaildb.com/api/json/v1/1/random.php')
+        .then(res => res.json())
+        .then(json => {
+            console.log(json.drinks)
+            res.render('random', { data: json.drinks })
+        })
+})
 
 app.get('/cocktails/:cocktail', (req, res) => {
     console.log(req.params.cocktail)
