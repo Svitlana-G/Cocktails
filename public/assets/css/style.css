@@ -136,7 +136,7 @@ header input[type="submit"]{
    }
 .coctails div:nth-of-type(2n) a h2{
     order: 1;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 .coctails div:nth-of-type(2n+1) a h2{
       padding-top: 25%;
@@ -149,7 +149,7 @@ header input[type="submit"]{
 .coctails h2{
     transform: rotate(270deg);
     font-size: 1.75rem;
-    width: 270px;
+    width: 290px;
     text-align: center;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -185,9 +185,11 @@ header input[type="submit"]{
     box-sizing: border-box;
     width: 100%;
     margin-top: 1.5vh;
-    height: 2rem;
-    padding-left: 1%;
+    padding-left: 3%;
+}
 
+.add input[type="text"], input[type="url"]{
+    height: 2rem;
 }
 
 .add form input:nth-of-type(5n+1){
@@ -214,9 +216,9 @@ header input[type="submit"]{
     background: #87C5A4;
  }
 
- .add textarea{
+ /* .add textarea{
      padding-bottom: 15vh;
- }
+ } */
 
  .add form input[type="submit"]{
     background: #6FC3DF;
@@ -243,3 +245,21 @@ header input[type="submit"]{
  }
 
 
+footer{
+    background-color: #262B46;
+    padding-left: 5%;
+}
+
+footer h2{
+    font-size: 1.75rem;
+    margin-top: 0;
+    padding: 14vh 0 3vh 0;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    padding-bottom: 12vh;
+    padding-right: 10%;
+}
