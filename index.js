@@ -18,7 +18,7 @@ app.get('/gin', (req, res) => {
         .then(res => res.json())
         .then(json => {
             console.log(json.drinks)
-            res.render('gin', { data: json.drinks })
+            res.render('drinks', { data: json.drinks })
         })
 })
 app.get('/vodka', (req, res) => {
@@ -26,7 +26,7 @@ app.get('/vodka', (req, res) => {
         .then(res => res.json())
         .then(json => {
             console.log(json.drinks)
-            res.render('vodka', { data: json.drinks })
+            res.render('drinks', { data: json.drinks })
         })
 })
 app.get('/rum', (req, res) => {
@@ -34,7 +34,7 @@ app.get('/rum', (req, res) => {
         .then(res => res.json())
         .then(json => {
             console.log(json.drinks)
-            res.render('rum', { data: json.drinks })
+            res.render('drinks', { data: json.drinks })
         })
 })
 app.get('/scotch', (req, res) => {
@@ -42,7 +42,7 @@ app.get('/scotch', (req, res) => {
         .then(res => res.json())
         .then(json => {
             console.log(json.drinks)
-            res.render('scotch', { data: json.drinks })
+            res.render('drinks', { data: json.drinks })
         })
 })
 app.get('/alkoholfrei', (req, res) => {
@@ -50,7 +50,7 @@ app.get('/alkoholfrei', (req, res) => {
         .then(res => res.json())
         .then(json => {
             console.log(json.drinks)
-            res.render('alkoholfrei', { data: json.drinks })
+            res.render('drinks', { data: json.drinks })
         })
 })
 app.get('/random', (req, res) => {
