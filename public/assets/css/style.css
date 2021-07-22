@@ -49,17 +49,18 @@ header p{
     font-size: .875rem;
     text-transform: uppercase;
     margin-top: 1vh;
+    margin-bottom: 0;
 }
 
-input{
+header input{
     border-radius: 6px;
     height: 2rem;
     box-sizing: border-box;
-    margin: 3vh 2% 0 0;
+    margin: 5vh 2% 0 0;
     
 }
 
-input[type="submit"]{
+header input[type="submit"]{
     background: #6FC3DF
 }
  header img{
@@ -68,21 +69,21 @@ input[type="submit"]{
      padding: 10vh 0 3vh 0;
  }
 
- main{
+ .start{
      display: grid;
      grid-template-columns: repeat(2,1fr);
 }
 
-main div{
+.start div{
     padding: 9vh 0 9vh 5%;
 }
 
- main h2{
+ .start h2{
      font-size: 3.125rem;
      margin-bottom: 0;
  }
 
- main p{
+.start p{
     font-family: 'Montserrat', sans-serif;
     font-size: .875rem;
     margin-top: 1vh;
@@ -116,11 +117,14 @@ main div{
      text-decoration: none;
      color: #FFF;
  }
-/* .coctails{
+.coctails{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-} */
+}
 
+.coctails div{
+    padding: 4vh 0 4vh 5%;
+}
 .coctails img{
     width: 50%;
     display: block;
@@ -159,4 +163,83 @@ main div{
     list-style: none;
     padding-inline-start:0
 }
+
+.add{
+    background: #262B46;
+    padding-left: 5%;
+}
+.add h3{
+    margin-top: 0;
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+    padding: 15vh 0 2vh 0;
+}
+
+.add form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.add input, .add textarea{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 1.5vh;
+    height: 2rem;
+    padding-left: 1%;
+
+}
+
+.add form input:nth-of-type(5n+1){
+    background: #6FC3DF;
+ }
+
+ .add form input:nth-of-type(5n+2){
+    background: #8D82C4;
+ }
+
+ .add form input:nth-of-type(5n+3){
+    background: #EC8D81;
+ }
+
+ .add form textarea{
+    background: #E7B788;
+ }
+
+ .add form input:nth-of-type(5n+4){
+    background: #8EA9E8;
+ }
+
+ .add form input:nth-of-type(5n+5){
+    background: #87C5A4;
+ }
+
+ .add textarea{
+     padding-bottom: 15vh;
+ }
+
+ .add form input[type="submit"]{
+    background: #6FC3DF;
+    border-radius: 6px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75rem;
+    font-weight: bold;
+    padding: 2vh 0;
+ }
+
+ .add .flex{
+     display: flex;
+     flex-grow:1;
+    justify-content: space-between;
+    background: #262B46;
+ }
+
+
+ .add .flex div{
+     display: flex;
+     flex-direction: column;
+     background: #262B46;
+ }
+
 

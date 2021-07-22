@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.get('/add', (req, res) => {
+    res.render('add')
+})
+
 app.get('/gin', (req, res) => {
     fetch('https://thecocktaildb.com/api/json/v1/1/filter.php?i=gin')
         .then(res => res.json())
