@@ -184,12 +184,12 @@ header input[type="submit"]{
 .add input, .add textarea{
     box-sizing: border-box;
     width: 100%;
-    margin-top: 1.5vh;
+    margin-top: 1.75vh;
     padding-left: 3%;
 }
 
 .add input[type="text"], input[type="url"]{
-    height: 2rem;
+    height: 2.25rem;
 }
 
 .add form input:nth-of-type(5n+1){
@@ -228,20 +228,39 @@ header input[type="submit"]{
     font-size: .75rem;
     font-weight: bold;
     padding: 2vh 0;
+    margin-top: 3.5vh;
  }
 
  .add .flex{
      display: flex;
-     flex-grow:1;
-    justify-content: space-between;
+     justify-content: space-between;
     background: #262B46;
+    align-items: flex-start;
  }
 
 
- .add .flex div{
+main .flex div{
      display: flex;
      flex-direction: column;
      background: #262B46;
+     padding-top: 8vh;
+     flex-grow:1;
+     padding-left: 3%;
+ }
+
+ .flex div img:nth-of-type(2){
+     width: 80%;
+     padding-left: 20%;
+ }
+ .flex form{
+     flex-grow: 1;
+     padding-top: 3vh;
+ }
+ 
+ .flex img{
+     flex-grow: 1;
+     padding-bottom: 2vh;
+     padding-left: 1%;
  }
 
 
