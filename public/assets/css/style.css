@@ -90,7 +90,11 @@ header input[type="submit"]{
     text-transform: uppercase;    
  }
  
- main div:nth-of-type(6n+1){
+ .start div:nth-of-type(1){
+    background: #6FC3DF;
+ }
+
+.coctails .drink:nth-of-type(6n+1){
     background: #6FC3DF;
  }
 
@@ -122,7 +126,7 @@ header input[type="submit"]{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.coctails div{
+.coctails .drink{
     padding: 4vh 0 4vh 5%;
 }
 .coctails img{
@@ -130,18 +134,18 @@ header input[type="submit"]{
     display: block;
 }
 
-.coctails a{
+.coctails .myLinks{
     display: flex;
     justify-content: space-between;
    }
-.coctails div:nth-of-type(2n) a h2{
+.coctails div:nth-of-type(2n) .myLinks h2{
     order: 1;
     padding-top: 7%;
 }
-.coctails div:nth-of-type(2n+1) a h2{
+.coctails div:nth-of-type(2n+1) .myLinks h2{
       padding-top: 25%;
 }
-.coctails div:nth-of-type(2n) a img{
+.coctails div:nth-of-type(2n) .myLinks img{
     order: 2;
     margin-right: 5%;
 }
@@ -156,13 +160,7 @@ header input[type="submit"]{
     line-height: 3rem;
     }
 
-.details{
-    display: flex;
-}
-.details ul{
-    list-style: none;
-    padding-inline-start:0
-}
+
 
 .add{
     background: #262B46;
@@ -281,4 +279,79 @@ footer p{
     line-height: 1.625rem;
     padding-bottom: 12vh;
     padding-right: 10%;
+}
+
+/* Modal */
+
+#myLink{
+    background-color: #262B46;
+}
+.modal{
+    display: none;
+    width: 95.25%;
+    margin: 0 auto; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    right: 0;
+    /* top:0; */
+    bottom: 17.5vh;
+    /* overflow: auto;  */
+
+}
+.close{
+    color: #fff;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-right: 1%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-content{
+    background-color: #262B46;
+}
+
+.flexDetails{
+    display: flex;
+}
+.flexDetails ul{
+    list-style: none;
+    padding-inline-start:0
+}
+
+.flexDetails img{
+    width: 30%;
+    padding: 15vh 3% ;
+}
+.flexDetails div{
+   padding: 4vh 5% 0 5%;
+}
+
+.flexDetails h2{
+    font-size: 1.75rem;
+}
+
+.flexDetails h3{
+    font-weight: bold;
+}
+
+.flexDetails ul,h3, p{
+    font-size: .875rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 18px;
+}
+
+iframe{
+    width: 95%;
+    height: 67vh;
+    border-width:0;
+    border-style: none;
 }

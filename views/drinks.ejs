@@ -1,16 +1,24 @@
 <%- include('./partials/header') %>
     <main class="coctails">
-
         <% data.forEach(drink=> {%>
-            <div>
-                <a href="/cocktails/<%= drink.idDrink  %> ">
+            <div class="drink">
+                <section class="myLinks" id="<%= drink.idDrink %>">
                     <img src=<%=drink.strDrinkThumb %> alt="">
                     <h2>
                         <%= drink.strDrink %>
                     </h2>
-                </a>
+                </section>
             </div>
             <% }) %>
 
+                <div class="details modal" id="myModal">
+                    <div class="modal-content">
+
+                        <span class="close">&times;</span>
+                        <iframe id="mySubpage" src="/cocktails/17241" scrolling="no"></iframe>
+
+                    </div>
+                </div>
+                <script src="/assets/js/main.js"></script>
     </main>
     <%- include('./partials/footer') %>

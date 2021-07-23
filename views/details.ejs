@@ -5,38 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Document</title>
+
 </head>
 
 <body>
-    <main class="details">
-
-        <img src="<%= dataId[0].strDrinkThumb %> " alt="">
-
-
-        <div>
-            <h2>
-                <%= dataId[0].strDrink %>
-            </h2>
-            <h3>Zutaten</h3>
-            <ul>
-                <% for(let i=1; i<16; i++){%>
-                    <% ingredient='strIngredient' + i %>
-                        <% measure='strMeasure' + i %>
-                            <% if(dataId[0][ingredient]!=null ){ %>
-                                <li>
-                                    <%= dataId[0][measure] %>
-                                        <%= dataId[0][ingredient] %>
-                                </li>
-                                <% } %>
+    <main>
+        <div class="flexDetails">
+            <img src="<%= dataId[0].strDrinkThumb %> " alt="">
 
 
+            <div>
+                <h2>
+                    <%= dataId[0].strDrink %>
+                </h2>
+                <h3>Zutaten</h3>
+                <ul>
+                    <% for(let i=1; i<16; i++){%>
+                        <% ingredient='strIngredient' + i %>
+                            <% measure='strMeasure' + i %>
+                                <% if(dataId[0][ingredient]!=null ){ %>
+                                    <li>
+                                        <%= dataId[0][measure] %>
+                                            <%= dataId[0][ingredient] %>
+                                    </li>
                                     <% } %>
-            </ul>
-            <p>
-                <%=dataId[0].strInstructions %>
-            </p>
+
+
+                                        <% } %>
+                </ul>
+                <p>
+                    <%=dataId[0].strInstructions %>
+                </p>
+            </div>
         </div>
     </main>
 </body>
